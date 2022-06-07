@@ -1,0 +1,76 @@
+@font-face {
+    font-family: space-font;
+    src: url(../fonts/Agelast-mLlAm.otf);
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.main-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.start {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, #00103a 0%, #334e62 100%);
+}
+
+.title-text {
+    font-family: space-font;
+    z-index: 2;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.launch-btn {
+    animation: inout 2.5s ease infinite;
+    z-index: 2;
+    color: white;
+    font-size: 2.5rem;
+    background-color: rgb(19, 202, 97);
+    padding: 1rem;
+    box-shadow: #094c66 3px 3px 1px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    transform-origin : center;
+}
+
+.launch-btn:active {
+    transform: translateY(-39px) translateX(-82px);
+    box-shadow: #094c66 0px 0px 1px;
+}
+
+@keyframes inout {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(255,255,255,0.4);
+        -moz-box-shadow: 0 0 0 0px rgba(255,255,255,0.4);
+        box-shadow: 0 0 0 0px rgba(255,255,255,0.4);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        -moz-box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+}
