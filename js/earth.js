@@ -112,7 +112,7 @@ function SemiCircle(x,y,radius,fillColor){
   this.fillColor = fillColor;
   
   c.beginPath();
-  c.arc(this.x, this.y, this.radius, Math.PI * 1.1, .5, false);
+  c.arc(this.x, this.y, this.radius, Math.PI * 1.2, .6, false);
   c.fillStyle = this.fillColor;
   c.fill();
 }

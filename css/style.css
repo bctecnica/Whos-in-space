@@ -21,9 +21,10 @@ body {
 }
 
 .start {
+    /* display: none; */
     width: 100%;
     height: 100%;
-    background: linear-gradient(206deg, #00103a 55%, #334e62 100%);
+    background: linear-gradient(220deg, #00103a 55%, #334e62 100%);
 }
 
 .title-text {
@@ -37,7 +38,7 @@ body {
     -webkit-backdrop-filter: blur(10px) contrast(100%);
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 20%;
     transform: translate(-50%, -50%);
 }
 
@@ -54,6 +55,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 700;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     color: rgb(25, 118, 181);
     background: #ffffff;
     border: none;
@@ -64,65 +66,43 @@ body {
     padding: 10px;
 }
 
-.launch-button::before {
-    content: "";
-    border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #00ffcb;
-    box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all 0.3s ease-in-out 0s;
-}
 
-.launch-button:hover,
-.launch-button:focus {
-    color: #313133;
-}
 
-.launch-button:hover::before,
-.launch-button:focus::before {
-    opacity: 1;
-}
 
-.launch-button::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    border: 6px solid rgba(33, 143, 216, .6);
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 2.5s infinite;
-}
 
-.launch-button:hover::after,
-.launch-button:focus::after {
-    animation: none;
-    display: none;
-}
-
-@keyframes ring {
-    0% {
-        width: 30px;
-        height: 30px;
-        opacity: 1;
-    }
-    100% {
-        width: 300px;
-        height: 300px;
-        opacity: 0;
-    }
-}
 
 .earth-canvas {
     margin-top: 5rem;
     transform: scale(.9);
+}
+
+.launch-pad {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(46, 175, 185) 0%, rgb(21, 12, 74) 60%);
+}
+
+.rocket {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -8%;
+    left: 50%;
+}
+
+.pad {
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+    left: 50%;
+}
+
+.rocket-launcher {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-150%, -50%);
+    bottom: 0%;
+    left: 50%;
 }
