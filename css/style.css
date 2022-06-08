@@ -36,7 +36,7 @@ body {
     backdrop-filter: blur(10px) contrast(100%);
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 20%;
     transform: translate(-50%, -50%);
 }
 
@@ -122,5 +122,6 @@ body {
 }
 
 .earth-canvas {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
+    transform: scale(.9);
 }
