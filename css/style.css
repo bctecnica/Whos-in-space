@@ -34,9 +34,10 @@ body {
     text-align: center;
     padding: 2rem;
     backdrop-filter: blur(10px) contrast(100%);
+    -webkit-backdrop-filter: blur(10px) contrast(100%);
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 15%;
     transform: translate(-50%, -50%);
 }
 
@@ -122,6 +123,6 @@ body {
 }
 
 .earth-canvas {
-    margin-top: 4.5rem;
+    margin-top: 5rem;
     transform: scale(.9);
 }
