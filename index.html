@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/shootingStars.css" rel="stylesheet" />
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/shootingStars.css" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-  <body>
-
-    <div class="main-container">
-      <!-- Opening screen -->
-      <div class="start">
-        <div class="sky-container-top">
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
+    <body>
+        <div class="main-container">
+            <!-- Opening screen -->
+            <div class="start">
+                <div class="sky-container-top">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <div class="sky-container-bottom">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <h1 class="title-text">Who's in<br />space</h1>
+                <div class="wrap">
+                    <button class="launch-button">Launch</button>
+                </div>
+                <canvas id="myCanvas" class="earth-canvas"></canvas>
+            </div>
+            <!-- Main screen -->
+            <div class="launch-pad"></div>
         </div>
-        <div class="sky-container-bottom">
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-        </div>
-        <h1 class="title-text">Who's in <br>space</h1>
-        <button class="launch-btn">Launch</button>
-      </div>
-      <!-- Main screen -->
-      <div class="launch-pad">
 
-      </div>
-    </div>
-    
-      
-		<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
-		integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
-		crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-		></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+            integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
 
-    <script src="script.js"></script>  
-  </body>
+        <script src="js/script.js"></script>
+        <script src="js/earth.js"></script>
+    </body>
 </html>
-
