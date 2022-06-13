@@ -1,4 +1,4 @@
-var canvas = document.querySelector('canvas');
+var canvas = document.querySelector('#myCanvas');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
