@@ -136,7 +136,7 @@ function drawClouds(a){
 function drawLand(a){
   for (var i = 0; i <= a; ++i) {
     var bestLocation = earthMask(land);
-    var landWidth = Math.floor(Math.random() * 25) + 10;;
+    var landWidth = Math.floor(Math.random() * 25) + 16;
     var landLength = Math.floor(Math.random() * 30) + 18;
     dx = 0.5;
     land.push(new Land(bestLocation[0],bestLocation[1],dx,landWidth,landLength));
@@ -204,9 +204,8 @@ drawLand(15);
 function animate(){
   requestAnimationFrame(animate);
   c.fillStyle = c.fillStyle = 'rgba(0, 0, 0, 0)';
-// linear-gradient(210deg, #00103a 55%, #334e62 100%)
   c.fillRect(0, 0, canvas.width, canvas.height);
-  var earthBorder = new Circle(center.x,center.y, 135,'rgb(12, 20, 56)');
+  var earthBorder = new Circle(center.x,center.y, 126,'rgb(12, 20, 56)');
   var earth = new Circle(center.x,center.y, earthWidth,'rgb(25, 118, 181)');
   for (var i = 1; i < land.length; i++){
     land[i].update();
