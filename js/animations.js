@@ -27,6 +27,6 @@ launch.addEventListener("click", () => {
         delay: 0.5,
     });
     tl.to("#flame1", { opacity: 0 });
-    tl.to("#flame2", { opacity: 0 });
+    tl.to("#flame2", { opacity: 0 }, "<");
     tl2.to("#smoke", { opacity: 0 });
 });
